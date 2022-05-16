@@ -16,39 +16,62 @@ body{
     background-color: #36244D;
     color: #DCBCFD;
 }
+
+hr{
+  border-color: var(--lightpurple);
+}
+
+.pointhover{
+  cursor: pointer;
+}
+
 .color-container{
   width: 100%;
   display: flex;
-}
-.color-container > div{
-
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .colors{
   width: 100px;
   height: 100px;
+  border-radius: 100%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.colors p{
+  margin: auto;
 }
 #darkpurple{
   background-color: var(--deeppurple);
-  border: 1px solid var(--offwhite);
+  border: 2px solid var(--lightpurple);
+  
 }
 #purple{
   background-color: var(--purple);
 }
 #lightpurple{
   background-color: var(--lightpurple);
+  color: var(--deeppurple);
 }
 #peach{
   background-color: var(--peach);
+  color: var(--deeppurple);
 }
 #white{
   background-color: var(--white);
+  color: var(--deeppurple);
 }
 #green{
   background-color: var(--green);
+  color: var(--deeppurple);
 }
 #offwhite{
   background-color: var(--offwhite);
+  color: var(--deeppurple);
 }
 #red{
   background-color: var(--red);
+  color: var(--deeppurple);
 }
