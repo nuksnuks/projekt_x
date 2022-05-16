@@ -17,12 +17,15 @@ body{
     color: #DCBCFD;
 }
 
-hr{
-  border-color: var(--lightpurple);
+.box{
+  background-color: var(--purple);
+  border-radius: 21px;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.pointhover{
-  cursor: pointer;
+p{
+  margin: 0px;
 }
 
 .color-container{
@@ -45,11 +48,11 @@ hr{
 }
 #darkpurple{
   background-color: var(--deeppurple);
-  border: 2px solid var(--lightpurple);
   
 }
 #purple{
   background-color: var(--purple);
+  border: 2px solid var(--lightpurple);
 }
 #lightpurple{
   background-color: var(--lightpurple);
