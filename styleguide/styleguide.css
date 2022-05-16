@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  --deeppurple: #36244D;
+  --purple: #4C3864;
+  --lightpurple: #DCBCFD;
+  --peach: #F2D7CA;
+  --white: #FFFFFF;
+  --offwhite: #FCFAF0;
+  --green: #CBEBDB;
+  --red: #E65151;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #36244D;
+    color: #DCBCFD;
+}
+.color-container{
+  width: 100%;
+  display: flex;
+}
+.color-container > div{
+
+}
+.colors{
+  width: 100px;
+  height: 100px;
+}
+#darkpurple{
+  background-color: var(--deeppurple);
+  border: 1px solid var(--offwhite);
+}
+#purple{
+  background-color: var(--purple);
+}
+#lightpurple{
+  background-color: var(--lightpurple);
+}
+#peach{
+  background-color: var(--peach);
+}
+#white{
+  background-color: var(--white);
+}
+#green{
+  background-color: var(--green);
+}
+#offwhite{
+  background-color: var(--offwhite);
+}
+#red{
+  background-color: var(--red);
+}
