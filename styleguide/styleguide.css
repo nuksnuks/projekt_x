@@ -22,10 +22,28 @@ body{
   border-radius: 21px;
   padding: 10px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 p{
   margin: 0px;
+  font-size: 16px;
+}
+
+h1{
+  font-size: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2{
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+hr{
+  border-color: var(--lightpurple);
 }
 
 .color-container{
@@ -40,8 +58,8 @@ p{
   border-radius: 100%;
   margin: 5px;
   display: flex;
-  justify-content: center;
   justify-items: center;
+  text-align: center;
 }
 .colors p{
   margin: auto;
@@ -78,3 +96,24 @@ p{
   background-color: var(--red);
   color: var(--deeppurple);
 }
+
+.grid{
+  display: grid;
+  grid-template-areas: 
+    "a b";
+}
+
+.a{
+  grid-area: a;
+}
+
+.b{
+  grid-area: b;
+  width: 200px;
+  margin-left: auto;
+  margin-right: 0px;
+  background-color: var(--offwhite);
+  color: var(--deeppurple);
+}
+
+
