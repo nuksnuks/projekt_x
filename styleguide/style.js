@@ -1,3 +1,4 @@
+//Lynge
 function showhide(elem){
     let el = elem.getElementsByTagName("div")[1];
     if(el.style.display == "none"){
