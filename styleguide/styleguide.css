@@ -17,6 +17,15 @@ body{
     color: #DCBCFD;
 }
 
+.guideT{
+  display: flex;
+  flex-direction: row;
+}
+
+.arrow{
+  margin-left: 10px;
+}
+
 .box{
   background-color: var(--purple);
   border-radius: 21px;

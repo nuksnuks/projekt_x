@@ -1,8 +1,16 @@
 function showhide(elem){
-    let el = elem.getElementsByTagName("div")[0]
+    let el = elem.getElementsByTagName("div")[1];
     if(el.style.display == "none"){
-        el.style.display = "grid" 
+        el.style.display = "grid";
     }else{
-        el.style.display = "none"
+        el.style.display = "none";
     }
+    let arrow = elem.getElementsByTagName("p")[1];
+    if(arrow.innerHTML == "▽"){
+        arrow.innerHTML = "△";
+    }else{
+        arrow.innerHTML = "▽";
+    }
+    
+
 }
