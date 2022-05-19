@@ -1,0 +1,85 @@
+
+:root{
+  --deeppurple: #36244D;
+  --purple: #4C3864;
+  --lightpurple: #DCBCFD;
+  --peach: #F2D7CA;
+  --white: #FFFFFF;
+  --offwhite: #FCFAF0;
+  --green: #CBEBDB;
+  --red: #E65151;
+}
+
+body{
+  background-color: var(--deeppurple);
+  font-family: 'Titillium Web', sans-serif;
+  color: var(--deeppurple);
+}
+
+.box{
+  background-color: var(--peach);
+  border-radius: 21px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 50px 2fr 3fr 2fr;
+  grid-template-areas: 
+    "im tx tg dt";
+
+  max-width: 500px;
+}
+
+p{
+  margin: 0px;
+}
+
+.smalltext{
+  font-size: 13px;
+}
+
+.imgbox{
+  grid-area: im;
+  background-color: var(--red);
+  border-radius: 21px;
+  height: 50px;
+  width: 100%;
+}
+
+.textbox{
+  grid-area: tx;
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tagbox{
+  grid-area: tg;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+
+.tag{
+  background-color: var(--deeppurple);
+  border-radius: 15px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  margin-top: 5px;
+  height: 22px;
+  color: var(--lightpurple);
+  align-self: center;
+}
+
+.ditbox{
+  grid-area: dt;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
