@@ -12,6 +12,4 @@ function showhide(elem){
     }else{
         arrow.innerHTML = "▽";
     }
-    
-
 }

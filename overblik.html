@@ -13,7 +13,10 @@
 </head>
 <body>
     <!-- lynge -->
-    <div onclick="fixtag(this)" class="box Prøve Intern Kode">
+    <input id="filter" list="tags"> 
+    <datalist id="tags">
+    </datalist>
+    <div class="box Prøve Intern Kode">
         <div class="imgbox"></div>
         <div class="textbox">
             <p class="name">Navn</p>
@@ -26,7 +29,18 @@
             <p class="use smalltext">Projekt</p>
         </div>
     </div>
-    <div class="box">
+    <div class="box Fast Ekstern Kode">
+        <div class="imgbox"></div>
+        <div class="textbox">
+            <p class="name">Navn</p>
+            <p class="price smalltext">Pris</p>
+        </div>
+        <div class="tagbox">
+        </div>
+        <div class="ditbox">
+            <p class="edit">Redigeret</p>
+            <p class="use smalltext">Projekt</p>
+        </div>
     </div>
 </body>
 </html>
