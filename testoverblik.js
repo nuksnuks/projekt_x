@@ -1,14 +1,28 @@
 //lynge
 var elems = document.getElementsByClassName("box");
-for(var i = 0; i < elems.length; i++)
+for(let i = 0; i < elems.length; i++)
 {
   fixtag(elems[i]);
 }
 
+var elems = document.getElementsByClassName("expandbox");
+for(let i = 0; i < elems.length; i++)
+{
+  fixtagtoo(elems[i]);
+}
 
 function fixtag(elem){
     cl = elem.classList;
     tagbox = elem.getElementsByTagName("div")[2];
+    tagbox.innerHTML = "";
+    for(let i = 1; i < cl.length; i++){
+        tagbox.innerHTML += "<div class='tag smalltext'>" + cl[i] + "</div>";
+    }
+}
+
+function fixtagtoo(elem){
+    cl = elem.classList;
+    tagbox = elem.getElementsByTagName("div")[5];
     tagbox.innerHTML = "";
     for(let i = 1; i < cl.length; i++){
         tagbox.innerHTML += "<div class='tag smalltext'>" + cl[i] + "</div>";

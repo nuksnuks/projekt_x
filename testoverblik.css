@@ -29,6 +29,21 @@ body{
   max-width: 1000px;
 }
 
+.expandbox{
+  background-color: var(--peach);
+  border-radius: 21px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 75px 1fr 1fr;
+  grid-template-areas: 
+    "im nm mn"
+    "im tx dt"
+    "tt tt tt"
+    "tg tg tg"
+    "eb eb eb";
+}
+
 p{
   margin: 0px;
   font-size: 16px;
@@ -38,12 +53,20 @@ p{
   font-size: 13px;
 }
 
+h3{
+  margin: 0px;
+}
+
 .imgbox{
   grid-area: im;
   background-color: var(--red);
   border-radius: 21px;
   height: 50px;
   width: 100%;
+}
+
+.expandbox .imgbox{
+  height: 75px;
 }
 
 .textbox{
@@ -75,10 +98,58 @@ p{
   align-self: center;
 }
 
+.tagtitle{
+  margin-top: 5px;
+  grid-area: tt;
+}
+
 .ditbox{
   grid-area: dt;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.namebox{
+  grid-area: nm;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.exbottom{
+  grid-area: eb;
+  display: grid;
+  grid-template-areas: 
+    "nt kt"
+    "bt bt";
+  column-gap: 40px;
+}
+
+.whitebox{
+  background-color: var(--offwhite);
+  border-radius: 21px;
+  padding: 10px;
+  
+}
+
+.notes{
+  margin-top: 5px;
+  grid-area: nt;
+  height: 100%;
+}
+
+.konto{
+  margin-top: 5px;
+  grid-area: kt;
+  height: 100%;
+}
+
+.bottom{
+  grid-area: bt;
+  margin-bottom: -10px;
+}
+
+.arrow{
+  text-align: center;
 }
