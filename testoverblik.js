@@ -5,12 +5,6 @@ for(let i = 0; i < elems.length; i++)
   fixtag(elems[i]);
 }
 
-var elems = document.getElementsByClassName("expandbox");
-for(let i = 0; i < elems.length; i++)
-{
-  fixtagtoo(elems[i]);
-}
-
 function fixtag(elem){
     cl = elem.classList;
     tagbox = elem.getElementsByTagName("div")[2];
@@ -20,7 +14,13 @@ function fixtag(elem){
     }
 }
 
-function fixtagtoo(elem){
+function exfixtag(elem){
+    boxtags = elem.parentElement.getElementsByTagName("div")[0].classList;
+    elem.className = "expandbox";
+    for(let i = 1; i < boxtags.length; i++){
+        elem.classList.add(boxtags[i]);
+    }
+
     cl = elem.classList;
     tagbox = elem.getElementsByTagName("div")[5];
     tagbox.innerHTML = "";
@@ -45,10 +45,13 @@ function filter(){
             boxes[i].style.display = "grid";
         }
     }
+    let ebs = document.getElementsByClassName("expandbox");
+    for(let i = 0; i < ebs.length; i++){
+        ebs[i].style.display = "none";
+    }
 }
 
 let alltags = [];
-
 function updatetags(){
     let boxes = document.getElementsByClassName("box");
     
@@ -65,6 +68,26 @@ function updatetags(){
     for(let i = 0; i < alltags.length; i++){
         options.innerHTML += "<option value='" + alltags[i] + "'>";
     }
+}
+
+function expand(elem) {
+    if(elem.classList[0] == "box"){
+        let eb = elem.parentElement.getElementsByClassName("expandbox")[0];
+        exfixtag(eb);
+        elem.style.display = "none";
+        eb.style.display = "grid";
+    }else{
+        let eb = elem.parentElement.parentElement;
+        let box = eb.parentElement.getElementsByClassName("box")[0];
+        eb.style.display = "none";
+        box.style.display = "grid";
+    }
+}
+
+function addbox(){
+    let all = document.getElementById("allbox");
+    let toadd = document.getElementById("hidden").innerHTML;
+    all.innerHTML += toadd;
 }
 
 document.getElementById("filter").addEventListener("blur", filter, false);

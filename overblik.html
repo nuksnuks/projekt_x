@@ -13,68 +13,153 @@
 </head>
 <body>
     <!-- lynge -->
+    <button onclick="addbox()">+</button>
     <input id="filter" list="tags"> 
     <datalist id="tags">
     </datalist>
-
-    <div class="box Prøve Intern Kode">
-        <div class="imgbox"></div>
-        <div class="textbox">
-            <p class="name">Navn</p>
-            <p class="price smalltext">Pris</p>
-        </div>
-        <div class="tagbox">
-        </div>
-        <div class="ditbox">
-            <p class="edit">Redigeret</p>
-            <p class="use smalltext">Projekt</p>
-        </div>
-    </div>
-    <div class="expandbox bob tob dob" onclick="fixtagtoo(this)">
-        <div class="imgbox"></div>
-        <div class="namebox">
-            <h3>Name</h3>
-        </div>
-        <div class="textbox">
-            <p class="price">Pris</p>
-            <p class="start">Startede</p>
-        </div>
-        <div class="ditbox">
-            <p class="edit">Redigeret</p>
-            <p class="use">Projekt</p>
-        </div>
-        <div class="tagtitle">
-            <p>Tags</p>
-        </div>
-        <div class="tagbox">
-        </div>
-        <div class="exbottom">
-            <div class="notes">
-                <p>Noter</p>
-                <div class="whitebox"></div>
-            </div>    
-            <div class="konto">
-                <p>Konti</p>
-                <div class="whitebox"></div>
-                <p class="arrow">&#x25BC;</p>
+    <div id="allbox">
+        <div class="holderbox">
+            <div onclick="expand(this)" class="box Prøve Intern Kode">
+                <div class="imgbox"></div>
+                <div class="textbox">
+                    <p class="name">Navn</p>
+                    <p class="price smalltext">Pris</p>
+                </div>
+                <div class="tagbox">
+                </div>
+                <div class="ditbox">
+                    <p class="edit">Redigeret</p>
+                    <p class="use smalltext">Projekt</p>
+                </div>
             </div>
-            <p class="bottom arrow">&#x25B2;</p>
+            <div class="expandbox">
+                <div class="imgbox"></div>
+                <div class="namebox">
+                    <h3>Name</h3>
+                </div>
+                <div class="textbox">
+                    <p class="price">Pris</p>
+                    <p class="start">Startede</p>
+                </div>
+                <div class="ditbox">
+                    <p class="edit">Redigeret</p>
+                    <p class="use">Projekt</p>
+                </div>
+                <div class="tagtitle">
+                    <p>Tags</p>
+                </div>
+                <div class="tagbox">
+                </div>
+                <div class="exbottom">
+                    <div class="notes">
+                        <p>Noter</p>
+                        <div class="whitebox"></div>
+                    </div>    
+                    <div class="konto">
+                        <p>Konti</p>
+                        <div class="whitebox"></div>
+                        <p class="arrow">&#x25BC;</p>
+                    </div>
+                    <p onclick="expand(this)" class="botar arrow">&#x25B2;</p>
+                </div>
+            </div>
         </div>
         
-    </div>
-    
-    <div class="box Fast Ekstern Kode">
-        <div class="imgbox"></div>
-        <div class="textbox">
-            <p class="name">Navn</p>
-            <p class="price smalltext">Pris</p>
-        </div>
-        <div class="tagbox">
-        </div>
-        <div class="ditbox">
-            <p class="edit">Redigeret</p>
-            <p class="use smalltext">Projekt</p>
-        </div>
+        <div class="holderbox">
+            <div  onclick="expand(this)" class="box Fast Ekstern Kode">
+                <div class="imgbox"></div>
+                <div class="textbox">
+                    <p class="name">Navn</p>
+                    <p class="price smalltext">Pris</p>
+                </div>
+                <div class="tagbox">
+                </div>
+                <div class="ditbox">
+                    <p class="edit">Redigeret</p>
+                    <p class="use smalltext">Projekt</p>
+                </div>
+            </div>
+            <div class="expandbox">
+                <div class="imgbox"></div>
+                <div class="namebox">
+                    <h3>Name</h3>
+                </div>
+                <div class="textbox">
+                    <p class="price">Pris</p>
+                    <p class="start">Startede</p>
+                </div>
+                <div class="ditbox">
+                    <p class="edit">Redigeret</p>
+                    <p class="use">Projekt</p>
+                </div>
+                <div class="tagtitle">
+                    <p>Tags</p>
+                </div>
+                <div class="tagbox">
+                </div>
+                <div class="exbottom">
+                    <div class="notes">
+                        <p>Noter</p>
+                        <div class="whitebox"></div>
+                    </div>    
+                    <div class="konto">
+                        <p>Konti</p>
+                        <div class="whitebox"></div>
+                        <p class="arrow">&#x25BC;</p>
+                    </div>
+                    <p onclick="expand(this)" class="botar arrow">&#x25B2;</p>
+                </div>
+            </div>
+        </div>        
     </div>
 </body>
+
+<div id="hidden">
+    <div class="holderbox">
+        <div onclick="expand(this)" class="box">
+            <div class="imgbox"></div>
+            <div class="textbox">
+                <p class="name">Navn</p>
+                <p class="price smalltext">Pris</p>
+            </div>
+            <div class="tagbox">
+            </div>
+            <div class="ditbox">
+                <p class="edit">Redigeret</p>
+                <p class="use smalltext">Projekt</p>
+            </div>
+        </div>
+        <div class="expandbox">
+            <div class="imgbox"></div>
+            <div class="namebox">
+                <h3>Name</h3>
+            </div>
+            <div class="textbox">
+                <p class="price">Pris</p>
+                <p class="start">Startede</p>
+            </div>
+            <div class="ditbox">
+                <p class="edit">Redigeret</p>
+                <p class="use">Projekt</p>
+            </div>
+            <div class="tagtitle">
+                <p>Tags</p>
+            </div>
+            <div class="tagbox">
+            </div>
+            <div class="exbottom">
+                <div class="notes">
+                    <p>Noter</p>
+                    <div class="whitebox"></div>
+                </div>    
+                <div class="konto">
+                    <p>Konti</p>
+                    <div class="whitebox"></div>
+                    <p class="arrow">&#x25BC;</p>
+                </div>
+                <p onclick="expand(this)" class="botar arrow">&#x25B2;</p>
+            </div>
+        </div>
+    </div>
+</div>
 </html>

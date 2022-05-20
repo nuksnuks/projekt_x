@@ -25,8 +25,8 @@ body{
   grid-template-columns: 50px 2fr 3fr 2fr;
   grid-template-areas: 
     "im tx tg dt";
-
   max-width: 1000px;
+  cursor: pointer;
 }
 
 .expandbox{
@@ -34,14 +34,14 @@ body{
   border-radius: 21px;
   padding: 10px;
   margin-bottom: 10px;
-  display: grid;
-  grid-template-columns: 75px 1fr 1fr;
+  display: none;
+  grid-template-columns: 20px 55px 1fr 1fr 20px;
   grid-template-areas: 
-    "im nm mn"
-    "im tx dt"
-    "tt tt tt"
-    "tg tg tg"
-    "eb eb eb";
+    "im im nm mn ."
+    "im im tx dt ."
+    ". tt tt tt ."
+    ". tg tg tg ."
+    ". eb eb eb .";
 }
 
 p{
@@ -130,26 +130,29 @@ h3{
   background-color: var(--offwhite);
   border-radius: 21px;
   padding: 10px;
-  
 }
 
 .notes{
   margin-top: 5px;
   grid-area: nt;
-  height: 100%;
+  
 }
 
 .konto{
   margin-top: 5px;
   grid-area: kt;
-  height: 100%;
 }
 
-.bottom{
+.botar{
   grid-area: bt;
   margin-bottom: -10px;
+  cursor: pointer;
 }
 
 .arrow{
   text-align: center;
+}
+
+#hidden{
+  display: none;
 }
