@@ -8,6 +8,9 @@
   --green: #CBEBDB;
   --red: #E65151;
 }
+* {
+  box-sizing: border-box;
+}
 
 body{
   background-color: var(--deeppurple);
@@ -82,13 +85,38 @@ p{
   flex-direction: column;
   justify-content: space-around;
 }
+/*David*/
 
 input{
   margin-top: 10px;
 }
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1{
+  color: var(--lightpurple);
+  margin-left: 20px;
+}
+
+h2{
+  color: var(--lightpurple);
+  font-style: italic;
+}
+h3{
+  margin-left: 20px;
+}
 
 a{
   cursor: pointer;
+}
+
+nav{
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #login-knap {
@@ -121,4 +149,47 @@ a{
 
 #opretbruger-knap{
   color: white;
+}
+#menu-container a, a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--darkpurple);
+  background-color: var(--green);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
+#main-container{
+  background-color: var(--peach);
+  margin-top: 10px;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70vh;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas:
+    'item1 item2'
+    'item3 item4';
+  gap: 10px;
+  padding: 10px;
+}
+#main-item1{
+  background-color: var(--white);
+  grid-area: item1;
+  border-radius: 10px;
+}
+#main-item2{
+  background-color: var(--white);
+  grid-area: item2;
+  border-radius: 10px;
+}
+#main-item3{
+  background-color: var(--white);
+  grid-area: item3;
+  border-radius: 10px;
+}
+#main-item4{
+  background-color: var(--white);
+  grid-area: item4;
+  border-radius: 10px;
 }
