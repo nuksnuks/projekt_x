@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;}
+
+body {
+  background-color: #9e8fb1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+/*pop up tilføj tjeneste*/
+#tilfoej {
+  background-color: #CCEBDB;
+  border: 0;
+  border-radius: 21px;
+  color: #36244D;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  }
+
+#luk {
+  background-color: #CCEBDB;
+  border:20;
+  color: #36244D;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  padding: 5px 10px;
+  float: left;
+  align-items: baseline;
+  }
+#tkonto {
+  background-color: #ffffff;
+  border: 20;
+  color: #36244D;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  padding: 5px 10px;
+}
+
+#ttjeneste {
+  background-color: #36244D;
+  border: 0;
+  border-radius: 21px;
+  color: #CCEBDB;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  padding: 10px 95px;
+  float:right;
+}
+
+.ttprofil {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  transition: opacity 0.3s ease;
+  border: 20;
+  border-radius: 21px;
+  background-color: #CCEBDB;
+  padding-top: 20px;
+  width: 460px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.ttprofil p {
+  margin: 30px;
+  color: #36244D;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.tkonti {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  transition: opacity 0.3s ease;
+  border: 20;
+  border-radius: 21px;
+  border-color: #36244D;
+  background-color: #CCEBDB;
+  padding-top: 20px;
+  height: 200px;
+  width: 460px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.tkonti p {
+  display: flex;
+  margin: 30px;
+  font-family:'Proxima Nova Alt Lt', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+#ok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #36244D;
+  border: 0;
+  border-radius: 21px;
+  color: #CCEBDB;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  padding: 10px 95px;
+  margin-left: 25%;
+}
+
+#luk2 {
+  background-color: #CCEBDB;
+  border:20;
+  color: #36244D;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  padding: 5px 10px;
+  float: left;
+  align-items: baseline;
+  }
+
+/*pop up fjern tjeneste*/
+#fjern {
+  background-color: #36244D;
+  border: 21px;
+  border-radius: 21px;
+  color: #E65151;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  padding: 10px 35px;
+  }
+
+#ja {
+  background-color: #36244D;
+  border: 0;
+  border-radius: 21px;
+  color: #F2D7CA;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  padding: 10px 95px;
+  float: left;
+  align-items: baseline;
+}
+
+#nej {
+  background-color: #36244D;
+  border: 0;
+  border-radius: 21px;
+  color: #F2D7CA;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  padding: 10px 95px;
+  float:right;
+}
+
+.fjernm {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  transition: opacity 0.3s ease;
+  background-color: #F2D7CA;
+  padding-top: 20px;
+  width: 460px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.fjernm p {
+  margin: 30px;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: #36244D;
+}
+
+.fjern2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  transition: opacity 0.3s ease;
+  background-color: #F2D7CA;
+  padding-top: 20px;
+  height: 200px;
+  width: 460px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.fjern2 p {
+  display: flex;
+  margin: 30px;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #36244D;
+}
+
+#ok2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #36244D;
+  border: 0;
+  border-radius: 21px;
+  color: #F2D7CA;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  padding: 10px 95px;
+  margin-left: 25%;
+}
