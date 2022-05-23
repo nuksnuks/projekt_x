@@ -1,4 +1,16 @@
 //lynge
+
+function test(){
+    sessionStorage.clear
+    let x = sessionStorage.getItem("name");
+    x += "," + document.getElementById("filter").value;
+    sessionStorage.name = x;
+
+    let y = sessionStorage.getItem("name").split(",")
+    console.log(y);
+}
+
+
 var elems = document.getElementsByClassName("box");
 for(let i = 0; i < elems.length; i++)
 {
