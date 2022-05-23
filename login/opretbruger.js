@@ -8,17 +8,17 @@ function gemData(){
   kode = document.getElementById("kode").value;
   email = document.getElementById("email").value;
 
-  sessionStorage.setItem('name', fornavn);
-  sessionStorage.setItem('lastname', efternavn);
-  sessionStorage.setItem('username', brugernavn);
-  sessionStorage.setItem('password', kode);
-  sessionStorage.setItem('email', email);
+  localStorage.setItem('name', fornavn);
+  localStorage.setItem('lastname', efternavn);
+  localStorage.setItem('username', brugernavn);
+  localStorage.setItem('password', kode);
+  localStorage.setItem('email', email);
 
-  console.log(sessionStorage.getItem('password'));
-  console.log(sessionStorage.getItem('name'));
-  console.log(sessionStorage.getItem('username'));
-  console.log(sessionStorage.getItem('password'));
-  console.log(sessionStorage.getItem('email'));
+  console.log(localStorage.getItem('password'));
+  console.log(localStorage.getItem('name'));
+  console.log(localStorage.getItem('username'));
+  console.log(localStorage.getItem('password'));
+  console.log(localStorage.getItem('email'));
 
   document.getElementById('login-container').style.display = 'flex';
   document.getElementById('opret-bruger-container').style.display = 'none';
