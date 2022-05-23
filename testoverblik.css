@@ -1,4 +1,3 @@
-
 :root{
   --deeppurple: #36244D;
   --purple: #4C3864;
@@ -8,6 +7,9 @@
   --offwhite: #FCFAF0;
   --green: #CBEBDB;
   --red: #E65151;
+}
+* {
+  box-sizing: border-box;
 }
 
 body{
@@ -23,7 +25,7 @@ body{
   margin-bottom: 10px;
   display: grid;
   grid-template-columns: 50px 2fr 3fr 2fr;
-  grid-template-areas: 
+  grid-template-areas:
     "im tx tg dt";
   max-width: 1000px;
   cursor: pointer;
@@ -110,6 +112,7 @@ h3{
   flex-direction: column;
   justify-content: space-around;
 }
+<<<<<<< HEAD
 
 .namebox{
   grid-area: nm;
@@ -156,3 +159,153 @@ h3{
 #hidden{
   display: none;
 }
+=======
+/*David*/
+
+input{
+  margin-top: 10px;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1{
+  color: var(--lightpurple);
+  font-size: 80px;
+  margin-left: 40px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+#logud{
+  background-color: var(--lightpurple);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+}
+
+h2{
+  color: var(--lightpurple);
+  font-style: italic;
+  font-size: 40px;
+}
+h3, h4, h4, .dashboard-p, .godkend-item{
+  margin-left: 20px;
+}
+
+a{
+  cursor: pointer;
+}
+
+nav{
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#login-knap {
+  padding: .9px 0px 0px 4px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+#login-container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#opret-bruger-container{
+  display: none;
+  flex-direction: column;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#opretknap{
+  cursor: pointer;
+}
+
+#opretbruger-knap{
+  color: white;
+}
+#menu-container a, a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--darkpurple);
+  background-color: var(--green);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
+#main-container{
+  background-color: var(--peach);
+  margin-top: 10px;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70vh;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas:
+    'item1 item2'
+    'item3 item4';
+  gap: 10px;
+  padding: 10px;
+}
+#main-item1{
+  background-color: var(--white);
+  grid-area: item1;
+  border-radius: 10px;
+}
+#main-item2{
+  background-color: var(--white);
+  grid-area: item2;
+  border-radius: 10px;
+}
+#main-item3{
+  background-color: var(--white);
+  grid-area: item3;
+  border-radius: 10px;
+}
+#main-item4{
+  background-color: var(--white);
+  grid-area: item4;
+  border-radius: 10px;
+}
+.godkend-item{
+  background-color: var(--lightpurple);
+  width: 20vw;
+  height: 60px;
+  border-radius: 10px;
+}
+#dashicon{
+  float: left;
+  width: 50px;
+}
+#godkendelser-container{
+  background-color: var(--peach);
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+#godkendelser-container h2{
+  font-style: normal;
+  color: var(--deeppurple);
+  margin-left: 20px;
+}
+.tjeneste-item{
+  background-color: var(--white);
+}
+>>>>>>> davids_branch
