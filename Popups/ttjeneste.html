@@ -6,6 +6,7 @@
     <link rel="stylesheet type=text/css" href="index.css">
     <script src="ttjeneste.js" defer></script>
     <link rel="stylesheet" href="https://use.typekit.net/vzd2iqe.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
     <!--Amanda-->
@@ -15,11 +16,47 @@
     <div id="ttprofil" class="ttprofil">
       <!--tilfoej tjeneste profil indhold-->
       <div class="ttprofil-content">
-        <p>test test</p>
-        <button id="luk">X</button>
-        <button id="tkonto">+</button>
-        <button id="ttjeneste">Tilføj tjeneste</button>
-    </div>
+        <!--billede kasse-->
+        <div class="imgb"></div>
+        <!--navn-->
+        <div class="navnb">
+          <p>Navn</p></div>
+          <!-- X til at lukk-->
+        <button class="luk" id="luk">X</button>
+        <!--boks til pris og tjeneste startet-->
+        <div class="tekstb">
+            <p class="pris">Pris</p>
+            <p class="tstart">Startede</p>
+        </div>
+        <!--boks til projekt og tilføjet af-->
+        <div class="tekstb2">
+            <p class="projekt">Projekt</p>
+            <p class="taf">Tilføjet af</p>
+        </div>
+        <!--Tags title-->
+        <div class="tekstb3">
+            <p>Tags</p></div>
+        <!--tag box med + knap-->
+        <div class="ttag">+</div>
+
+        <!--boks med note og konti title-->
+        <div class="tekstb4">
+          <div class="noter"><p>Noter</p></div>
+          <div class="kontin"><p>Konti</p></div>
+        </div>
+
+        <!--whiteboxes-->
+        <div class="tekstb5">
+          <div class="whitebox">
+            <p>I...</p></div>
+          <div class="whitebox2">
+            <button id="tkonto">+</button></div>
+        </div>
+        <!--klip og knap-->
+          <span id="klips" class="material-symbols-outlined">attach_file</span>
+          <button id="ttjeneste" class="ttjeneste">Tilføj tjeneste</button>
+      </div>
+
     <!--tilfoej konti-->
     <div id="tkonti" class="tkonti">
       <!--tilfoej konti indhold-->
