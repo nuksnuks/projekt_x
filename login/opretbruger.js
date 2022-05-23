@@ -14,12 +14,6 @@ function gemData(){
   localStorage.setItem('password', kode);
   localStorage.setItem('email', email);
 
-  console.log(localStorage.getItem('password'));
-  console.log(localStorage.getItem('name'));
-  console.log(localStorage.getItem('username'));
-  console.log(localStorage.getItem('password'));
-  console.log(localStorage.getItem('email'));
-
   document.getElementById('login-container').style.display = 'flex';
   document.getElementById('opret-bruger-container').style.display = 'none';
 }

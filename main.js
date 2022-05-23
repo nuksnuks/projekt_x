@@ -1,1 +1,3 @@
-console.log(localStorage.getItem(name));
+localStorage.getItem('name');
+
+alert(localStorage.getItem('name'));
