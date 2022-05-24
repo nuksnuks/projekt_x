@@ -16,6 +16,15 @@ function gemData(){
 
   document.getElementById('login-container').style.display = 'flex';
   document.getElementById('opret-bruger-container').style.display = 'none';
+
+  let data =[
+    ['Netflix', 99, localStorage.getItem('name')],
+    ['disney+', 49, 'Tobias'],
+    ['Slack', 499, 'Elisabeth'],
+    ['Google', 499, 'Henriette']
+  ];
+
+  console.table(data[0]);
 }
 
 opretknap.addEventListener("click", gemData);
