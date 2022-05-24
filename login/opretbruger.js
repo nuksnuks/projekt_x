@@ -1,4 +1,5 @@
 opretknap = document.getElementById("opretknap");
+login = document.getElementById("login-knap");
 
 
 function gemData(){
@@ -24,7 +25,20 @@ function gemData(){
     ['Google', 499, 'Henriette']
   ];
 
-  console.table(data[0]);
+  console.table(data);
+}
+
+function validateLogin(){
+  if(
+    document.getElementById('user-login').value == localStorage.getItem('username')
+    && document.getElementById('user-code').value == localStorage.getItem('password')) {
+    window.location = "../index.html";
+  }
+  else{
+    alert("forkert brugernavn eller password")
+  }
 }
 
 opretknap.addEventListener("click", gemData);
+
+login.addEventListener("click", validateLogin)

@@ -21,11 +21,11 @@ function exfixtag(elem){
     for(let i = 1; i < boxtags.length; i++){
         elem.classList.add(boxtags[i]);
     }
-    
+
     let textname = box.getElementsByClassName("name")[0].innerHTML;
     elem.getElementsByClassName("namebox")[0].innerHTML = "<h3>" + textname + "<h3>";
     let textprice = box.getElementsByClassName("price")[0].innerHTML;
-    elem.getElementsByClassName("price")[0].innerHTML = textprice;    
+    elem.getElementsByClassName("price")[0].innerHTML = textprice;
 
     cl = elem.classList;
     tagbox = elem.getElementsByTagName("div")[5];
@@ -60,7 +60,7 @@ function filter(){
 let alltags = [];
 function updatetags(){
     let boxes = document.getElementsByClassName("box");
-    
+
     for(let i = 0; i < boxes.length; i++){
         let tags = boxes[i].classList;
         for(let i = 1; i < tags.length; i++){
@@ -99,7 +99,7 @@ function addbox(){
     hid.getElementsByClassName("box")[0].classList.add(localStorage.getItem("ttag"));
     let toadd = hid.innerHTML;
     all.innerHTML += toadd;
-    
+
     let elems = document.getElementsByClassName("box");
     for(let i = 0; i < elems.length; i++)
     {
@@ -120,7 +120,8 @@ function infoputter(){
         var longn = localStorage.getItem("tlongn") + "," + name;
         var longp = localStorage.getItem("tlongp") + "," + price;
         var longt = localStorage.getItem("tlongt") + "," + tag;
-    }else{
+    }
+    else{
         var longn = name;
         var longp = price;
         var longt = tag;
@@ -150,7 +151,7 @@ function loadbox(n, p, t){
     hid.getElementsByClassName("box")[0].classList.add(t);
     let toadd = hid.innerHTML;
     all.innerHTML += toadd;
-    
+
     let elems = document.getElementsByClassName("box");
     for(let i = 0; i < elems.length; i++)
     {
