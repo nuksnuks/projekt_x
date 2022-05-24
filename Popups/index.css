@@ -9,9 +9,10 @@
   --red: #E65151;
 }
 * {
-  box-sizing: border-box;}
+  box-sizing: border-box;
+}
 
-body {
+body{
   background-color: var(--deeppurple);
   font-family: 'Titillium Web', sans-serif;
   margin: 0;
@@ -36,161 +37,179 @@ body {
   padding-left: 30px;
   }
 
-
-  /*grid area*/
-.imgb {grid-area: pic}
-.navnb {grid-area: nv}
-.luk {grid-area: luk}
-.tesktb {grid-area: tx1}
-.pris {grid-area: pr}
-.tstart {grid-area: st}
-.tekstb2 {grid-area: tx2}
-.projekt {grid-area: pt}
-.taf {grid-area: tf}
-.tekstb3 {grid-area: tx3}
-.ttag {grid-area:tt}
-.tekstb4 {grid-area: tx4}
-.noter {grid-area: nt}
-.kontin {grid-area: kn}
-.tekstb5 {grid-area: tx5}
-.whitebox {grid-area: wb1}
-.whitebox2 {grid-area: wb2}
-.material-symbols-outlined {grid-area: kl}
-.ttjeneste {grid-area: tj}
-
 .ttprofil {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   transition: opacity 0.3s ease;
-  border: 0;
-  border-radius: 21px;
-  background-color: #CCEBDB;
-  width: auto;
 }
 
-.ttprofil-content {
+
+.ttprofil-content{
+  background-color: var(--green);
+  border-radius: 21px;
+  padding: 20px;
+  margin:auto;
+  width: 600px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 20px 55px 1fr 1fr 20px;
+  grid-template-areas:
+    "pic pic nv nv luk"
+    "pic pic tx1 tx2 ."
+    "tx3 tx3 tx3 tx3 ."
+    "ta ta ta ta ."
+    "tx4 tx4 tx4 tx4 .";
+}
+
+p{
+  margin: 0px;
+  font-size: 16px;
+  color: var(--deeppurple);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.imgb{
+  grid-area: pic;
+  background-color: var(--offwhite);
+  border-radius: 21px;
+  height: 50px;
+  width: 120%;
+}
+
+.navnb h3{
+  grid-area: nv;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+#luk{
+  grid-area: luk;
+  color: var(--deeppurple);
+  background-color: #CCEBDB;
+  border:0;
+  border-radius: 21px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  margin-right: auto;
+  margin-top: -15px;
+}
+
+.ttprofil-content .imgb{
+  height: 100px;
+}
+
+.tekstb{
+  grid-area: tx1;
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+.tekstb2{
+  grid-area: tx2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ttag{
+  grid-area: ta;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: var(--deeppurple);
+  width: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  color: var(--green);
+  font-size: 20px;
+  justify-content: center;
+}
+
+.tekstb3{
+  margin-top: 5px;
+  grid-area: tx3;
+}
+
+.tekstb4{
+  grid-area: tx4;
   display: grid;
   grid-template-areas:
-  "pic nv luk"
-  "pic pr pt2"
-  "pic st tf"
-  "tx3 . ."
-  "tt . ."
-  "nt . kn"
-  "wb1 . wb2"
-  "kl . tj";
+    "no no kn kn"
+    "tx4 tj tj .";
+  column-gap: 40px;
 }
 
-.imgb {
-  background-color: #ffffff;
-  border: 0;
+.whiteb{
+  background-color: var(--offwhite);
   border-radius: 21px;
-  height: 150px;
-  width: 150px;
-  margin-left: 30px;
-  margin-top: 30px;
+  padding: 20px;
+  padding-bottom: 50px;
+
 }
 
-.navnb {
-  color: #36244D;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 30px;
+.noter{
   margin-top: 5px;
-  margin-left: 20px;;
-}
+  grid-area: no;
 
-#luk {
-  background-color: #CCEBDB;
-  border:20;
-  color: #36244D;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 30px;
-  width: 50px;
-  height: 50px;
-  margin: 0;
-  padding: 0;
 }
-
+.kontin{
+  margin-top: 5px;
+  grid-area: kn;
+  color: var(--deeppurple);
+}
 
 #tkonto {
-  background-color: #ffffff;
-  border: 20;
-  color: #36244D;
-  font-family: 'titillium-web', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 40px;
-  padding: 5px 10px;
-}
-
-#ttjeneste {
-  background-color: #36244D;
-  border: 0;
-  border-radius: 21px;
-  color: #CCEBDB;
+  background-color: var(--offwhite);
+  border:0;
+  color: var(--deeppurple);
   font-family: 'titillium-web', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
-  padding: 10px 30px;
-  }
-
-
-.tkonti {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  transition: opacity 0.3s ease;
-  border: 20;
-  border-radius: 21px;
-  border-color: #36244D;
-  background-color: #CCEBDB;
-  padding-top: 20px;
-  height: 200px;
-  width: 460px;
-  max-width: 100%;
-  max-height: 100%;
+  margin-left: 90%;
+  margin-top: -20px;;
 }
 
-.tkonti p {
-  display: flex;
-  margin: 30px;
-  font-family:'Proxima Nova Alt Lt', sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 30px;
-  justify-content: center;
-  align-items: center;
+.tekstb4 span{
+  grid-area: tx4;
+  color: var(--deeppurple);
+  margin-left: -10px;
 }
-#ok {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #36244D;
+
+.ttjeneste{
+  grid-area: tj;
+  text-align: center;
+}
+
+#ttjeneste {
+  background-color: var(--deeppurple);
   border: 0;
   border-radius: 21px;
-  color: #CCEBDB;
-  font-family: 'titillium-web', sans-serif;
+  color: var(--green);
   font-weight: 700;
   font-style: normal;
-  font-size: 30px;
-  padding: 10px 95px;
-  margin-left: 25%;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
 }
 
-#luk2 {
-  background-color: #CCEBDB;
-  border:20;
-  color: #36244D;
-  font-family: 'titillium-web', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 40px;
-  padding: 5px 10px;
-  float: left;
-  align-items: baseline;
-  }
+#klips {
+  color: var(--deeppurple);
+  margin-top: 20px;
+  margin-left: -5px;
+}
+
 
 /*pop up fjern tjeneste*/
 #fjern {
