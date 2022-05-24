@@ -10,7 +10,6 @@ function test(){
     console.log(y);
 }
 
-
 var elems = document.getElementsByClassName("box");
 for(let i = 0; i < elems.length; i++)
 {
@@ -98,9 +97,23 @@ function expand(elem) {
 
 function addbox(){
     let all = document.getElementById("allbox");
-    let toadd = document.getElementById("hidden").innerHTML;
+    let hid = document.getElementById("hidden");
+    hid.getElementsByClassName("name")[0].innerHTML = sessionStorage.getItem("name")
+    hid.getElementsByClassName("price")[0].innerHTML = sessionStorage.getItem("price")
+    hid.getElementsByClassName("box")[0].classList.add(sessionStorage.getItem("tag"))
+    let toadd = hid.innerHTML;
     all.innerHTML += toadd;
+    fixtag(all.getElementsByClassName(sessionStorage.getItem("tag"))[0])
+    
 }
+
+function infoputter(){
+    sessionStorage.setItem("name", document.getElementById("inna").value)
+    sessionStorage.setItem("price", document.getElementById("inpr").value)
+    sessionStorage.setItem("tag", document.getElementById("inta").value)
+    addbox();
+}
+
 
 document.getElementById("filter").addEventListener("blur", filter, false);
 updatetags();

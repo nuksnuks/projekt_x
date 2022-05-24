@@ -45,7 +45,7 @@ body{
   display: none;
   grid-template-columns: 20px 55px 1fr 1fr 20px;
   grid-template-areas: 
-    "im im nm mn ed"
+    "im im nm nm ed"
     "im im tx dt ."
     ". tt tt tt ."
     ". tg tg tg ."
