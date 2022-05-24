@@ -13,7 +13,7 @@
 }
 
 body{
-  background-color: var(--deeppurple);
+  background-color: rgb(109, 166, 115);
   font-family: 'Titillium Web', sans-serif;
   margin: 0;
   display: flex;
@@ -42,7 +42,6 @@ body{
   position: fixed; /* Stay in place */
   transition: opacity 0.3s ease;
 }
-
 
 .ttprofil-content{
   background-color: var(--green);
@@ -210,7 +209,6 @@ p{
   margin-left: -5px;
 }
 
-
 /*pop up fjern tjeneste*/
 #fjern {
   background-color: #36244D;
@@ -224,52 +222,46 @@ p{
   padding: 10px 35px;
   }
 
-#ja {
-  background-color: #36244D;
-  border: 0;
-  border-radius: 21px;
-  color: #F2D7CA;
-  font-family: 'titillium-web', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 40px;
-  padding: 10px 95px;
-  float: left;
-  align-items: baseline;
-}
-
-#nej {
-  background-color: #36244D;
-  border: 0;
-  border-radius: 21px;
-  color: #F2D7CA;
-  font-family: 'titillium-web', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 40px;
-  padding: 10px 95px;
-  float:right;
-}
-
 .fjernm {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   transition: opacity 0.3s ease;
+}
+
+.fjern-content {
   background-color: #F2D7CA;
   padding-top: 20px;
   width: 460px;
-  max-width: 100%;
-  max-height: 100%;
-}
-
+  height: 300px;
+  border: 0;
+  border-radius: 21px;
+  }
 
 .fjernm p {
   margin: 30px;
   font-family: 'titillium-web', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
-  font-size: 40px;
-  color: #36244D;
+  font-size: 30px;
+  color: var(--deeppurple);
+}
+.janej {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+#ja, #nej{
+  background-color: var(--deeppurple);
+  border: 0;
+  border-radius: 21px;
+  color: #F2D7CA;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  padding: 10px 30px;
+  margin: auto;
 }
 
 .fjern2 {
@@ -280,35 +272,34 @@ p{
   padding-top: 20px;
   height: 200px;
   width: 460px;
-  max-width: 100%;
-  max-height: 100%;
+  border: 0;
+  border-radius: 21px;
 }
-
 
 .fjern2 p {
   display: flex;
   margin: 30px;
-  font-family: 'titillium-web', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
-  font-size: 40px;
+  font-size: 30px;
   justify-content: center;
   align-items: center;
-  color: #36244D;
+  color: var(--deeppurple);
+  margin-top: 10px;
 }
 
 #ok2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #36244D;
+  background-color: var(--deeppurple);
   border: 0;
   border-radius: 21px;
   color: #F2D7CA;
   font-family: 'titillium-web', sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 40px;
+  font-size: 30px;
   padding: 10px 95px;
   margin-left: 25%;
 }
