@@ -32,11 +32,3 @@ ok2.onclick = function() {
   fjern2.style.display = "none"
   fjernm.style.display = "none";
 }
-
-window.onclick = function(event) {
-  if (event.target == fjern2) {
-    fjern2.style.display = "none"
-    fjernm.style.display = "none"
-    ;
-  }
-}

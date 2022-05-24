@@ -35,6 +35,7 @@ body{
   padding-bottom: 5px;
   padding-right: 30px;
   padding-left: 30px;
+  cursor: pointer;
   }
 
 .ttprofil {
@@ -68,12 +69,27 @@ p{
   font-style: normal;
 }
 
+input{
+  background-color: var(--green);
+  border-radius: 5px;
+}
+
 .imgb{
   grid-area: pic;
   background-color: var(--offwhite);
   border-radius: 21px;
   height: 50px;
   width: 120%;
+}
+
+.navnb{
+  display: flex;
+}
+
+.navnb input{
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 20px;
 }
 
 .navnb h3{
@@ -95,6 +111,7 @@ p{
   font-size: 30px;
   margin-right: auto;
   margin-top: -15px;
+  cursor: pointer;
 }
 
 .ttprofil-content .imgb{
@@ -138,6 +155,13 @@ p{
 .tekstb3{
   margin-top: 5px;
   grid-area: tx3;
+  display: flex;
+}
+
+.tekstb3 input{
+  margin-left: 10px;
+  margin-top: 4px;
+  height: 20px;
 }
 
 .tekstb4{
@@ -189,6 +213,7 @@ p{
 .ttjeneste{
   grid-area: tj;
   text-align: center;
+  cursor: pointer;
 }
 
 #ttjeneste {
