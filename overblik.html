@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,600;0,700;0,900;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="testoverblik.js" defer></script>
-    <title>Document</title>
+    <title>Overblik</title>
 </head>
 <body>
   <!--David -->
@@ -33,12 +33,13 @@
   <!-- David -->
 
     <!-- lynge -->
-
-    <span class="material-symbols-outlined">
-        edit
+    <div id="filterbox">
+        <input id="filter" list="tags">
+        <span id="search" class="material-symbols-outlined">
+            search
         </span>
-
-    <input id="filter" list="tags">
+    </div>
+    
     <datalist id="tags">
     </datalist>
     <div id="allbox">

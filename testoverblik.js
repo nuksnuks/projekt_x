@@ -105,6 +105,7 @@ function addbox(){
     {
         fixtag(elems[i]);
     }
+    updatetags();
 }
 
 function infoputter(){
@@ -157,6 +158,7 @@ function loadbox(n, p, t){
     {
         fixtag(elems[i]);
     }
+    updatetags();
 }
 
 document.getElementById("filter").addEventListener("blur", filter, false);
