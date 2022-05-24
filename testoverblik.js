@@ -1,15 +1,4 @@
 //lynge
-
-function test(){
-    sessionStorage.clear
-    let x = sessionStorage.getItem("name");
-    x += "," + document.getElementById("filter").value;
-    sessionStorage.name = x;
-
-    let y = sessionStorage.getItem("name").split(",")
-    console.log(y);
-}
-
 var elems = document.getElementsByClassName("box");
 for(let i = 0; i < elems.length; i++)
 {
@@ -104,10 +93,10 @@ function expand(elem) {
 function addbox(){
     let all = document.getElementById("allbox");
     let hid = document.getElementById("hidden");
-    hid.getElementsByClassName("name")[0].innerHTML = localStorage.getItem("name");
-    hid.getElementsByClassName("price")[0].innerHTML = localStorage.getItem("price");
+    hid.getElementsByClassName("name")[0].innerHTML = localStorage.getItem("tname");
+    hid.getElementsByClassName("price")[0].innerHTML = localStorage.getItem("tprice");
     hid.getElementsByClassName("box")[0].classList = "box";
-    hid.getElementsByClassName("box")[0].classList.add(localStorage.getItem("tag"));
+    hid.getElementsByClassName("box")[0].classList.add(localStorage.getItem("ttag"));
     let toadd = hid.innerHTML;
     all.innerHTML += toadd;
     
@@ -119,12 +108,55 @@ function addbox(){
 }
 
 function infoputter(){
-    localStorage.setItem("name", document.getElementById("inna").value)
-    localStorage.setItem("price", document.getElementById("inpr").value)
-    localStorage.setItem("tag", document.getElementById("inta").value)
-    addbox()
+    let name = document.getElementById("inna").value;
+    let price = document.getElementById("inpr").value;
+    let tag = document.getElementById("inta").value;
+
+    localStorage.setItem("tname", name);
+    localStorage.setItem("tprice", price);
+    localStorage.setItem("ttag", tag);
+
+    if(localStorage.getItem("tlongn") !== null){
+        var longn = localStorage.getItem("tlongn") + "," + name;
+        var longp = localStorage.getItem("tlongp") + "," + price;
+        var longt = localStorage.getItem("tlongt") + "," + tag;
+    }else{
+        var longn = name;
+        var longp = price;
+        var longt = tag;
+    }
+
+    localStorage.setItem("tlongn", longn);
+    localStorage.setItem("tlongp", longp);
+    localStorage.setItem("tlongt", longt);
+    addbox();
 }
 
+if(localStorage.getItem("tlongn") !== null){
+    names = localStorage.getItem("tlongn").split(",");
+    prices = localStorage.getItem("tlongp").split(",");
+    tags = localStorage.getItem("tlongt").split(",");
+    for(let i = 0; i < names.length; i++){
+        loadbox(names[i], prices[i], tags[i]);
+    }
+}
+
+function loadbox(n, p, t){
+    let all = document.getElementById("allbox");
+    let hid = document.getElementById("hidden");
+    hid.getElementsByClassName("name")[0].innerHTML = n;
+    hid.getElementsByClassName("price")[0].innerHTML = p;
+    hid.getElementsByClassName("box")[0].classList = "box";
+    hid.getElementsByClassName("box")[0].classList.add(t);
+    let toadd = hid.innerHTML;
+    all.innerHTML += toadd;
+    
+    let elems = document.getElementsByClassName("box");
+    for(let i = 0; i < elems.length; i++)
+    {
+        fixtag(elems[i]);
+    }
+}
 
 document.getElementById("filter").addEventListener("blur", filter, false);
 updatetags();
