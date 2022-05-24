@@ -26,11 +26,17 @@ function fixtag(elem){
 }
 
 function exfixtag(elem){
-    boxtags = elem.parentElement.getElementsByTagName("div")[0].classList;
+    box = elem.parentElement.getElementsByTagName("div")[0];
+    boxtags = box.classList;
     elem.className = "expandbox";
     for(let i = 1; i < boxtags.length; i++){
         elem.classList.add(boxtags[i]);
     }
+    
+    let textname = box.getElementsByClassName("name")[0].innerHTML;
+    elem.getElementsByClassName("namebox")[0].innerHTML = "<h3>" + textname + "<h3>";
+    let textprice = box.getElementsByClassName("price")[0].innerHTML;
+    elem.getElementsByClassName("price")[0].innerHTML = textprice;    
 
     cl = elem.classList;
     tagbox = elem.getElementsByTagName("div")[5];
