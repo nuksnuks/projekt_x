@@ -14,3 +14,10 @@ var data = google.visualization.arrayToDataTable([
 var chart = new google.visualization.BarChart(document.getElementById('myChart'));
   chart.draw(data);
 }
+
+window.addEventListener('resize', fixit, false);
+
+function fixit(){
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+}
