@@ -18,6 +18,28 @@ body{
   color: var(--deeppurple);
 }
 
+#filterbox{
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: end;
+  margin-top: -39px;
+}
+
+#filter{
+  border-color: var(--green);
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  width: 100px;
+  height: 34px;
+}
+
+#search{
+  color: var(--peach);
+  margin-right: -26px;
+}
+
 .holderbox{
   margin-top: 10px;
   width: 75vw;
@@ -278,7 +300,6 @@ nav{
   width: 75vw;
   margin-left: auto;
   margin-right: auto;
-  height: 70vh;
   border-radius: 10px;
   display: grid;
   grid-template-areas:
