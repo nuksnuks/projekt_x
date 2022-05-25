@@ -3,7 +3,7 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
 var data = google.visualization.arrayToDataTable([
-  ['Tjeneste', 'Mhl'],
+  ['Tjeneste', 'forbrug i kr.'],
   ['Google Workspace',54.8],
   ['Slack',48.6],
   ['Asana',44.4],

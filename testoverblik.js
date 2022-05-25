@@ -93,29 +93,10 @@ function expand(elem) {
 function addbox(){
     let all = document.getElementById("allbox");
     let hid = document.getElementById("hidden");
-    hid.getElementsByClassName("name")[0].innerHTML = localStorage.getItem("tname");
-    hid.getElementsByClassName("price")[0].innerHTML = localStorage.getItem("tprice");
-    hid.getElementsByClassName("box")[0].classList = "box";
-    hid.getElementsByClassName("box")[0].classList.add(localStorage.getItem("ttag"));
-    let toadd = hid.innerHTML;
-    all.innerHTML += toadd;
 
-    let elems = document.getElementsByClassName("box");
-    for(let i = 0; i < elems.length; i++)
-    {
-        fixtag(elems[i]);
-    }
-    updatetags();
-}
-
-function infoputter(){
-    let name = document.getElementById("inna").value;
-    let price = document.getElementById("inpr").value;
-    let tag = document.getElementById("inta").value;
-
-    localStorage.setItem("tname", name);
-    localStorage.setItem("tprice", price);
-    localStorage.setItem("ttag", tag);
+    let name = localStorage.getItem("tname");
+    let price = localStorage.getItem("tprice");
+    let tag = localStorage.getItem("ttag");
 
     if(localStorage.getItem("tlongn") !== null){
         var longn = localStorage.getItem("tlongn") + "," + name;
@@ -131,7 +112,20 @@ function infoputter(){
     localStorage.setItem("tlongn", longn);
     localStorage.setItem("tlongp", longp);
     localStorage.setItem("tlongt", longt);
-    addbox();
+
+    hid.getElementsByClassName("name")[0].innerHTML = name;
+    hid.getElementsByClassName("price")[0].innerHTML = price;
+    hid.getElementsByClassName("box")[0].classList = "box";
+    hid.getElementsByClassName("box")[0].classList.add(tag);
+    let toadd = hid.innerHTML;
+    all.innerHTML += toadd;
+
+    let elems = document.getElementsByClassName("box");
+    for(let i = 0; i < elems.length; i++)
+    {
+        fixtag(elems[i]);
+    }
+    updatetags();
 }
 
 if(localStorage.getItem("tlongn") !== null){
