@@ -25,9 +25,10 @@
       <div class="grid">
         <div class="a">
           <p>Skrifttype: Titillium Web</p>
-          <h1>Overskrifter: 80px</h1>
-          <h2>Underoverskrifter: 40px</h2>
+          <h1>Overskrifter: 40px</h1>
+          <h3>Underoverskrifter: 19px</h3>
           <p>Brød text: 16px</p>
+          <p class="smalltext">Lille tekst: 13px</p>
         </div>
         <code class="box b">
           <p><b>CSS Kode:</b></p>
@@ -36,14 +37,15 @@
           </p> <br>
           <p><b>HTML Kode:</b></p>
           <p>
-            &lt;h1&gt;&lt;h1&gt; <br>
-            &lt;h2&gt;&lt;h2&gt; <br>
-            &lt;p&gt;&lt;p&gt;
+            &lt;h2&gt;&lt;/h1&gt; <br>
+            &lt;h3&gt;&lt;/h2&gt; <br>
+            &lt;p&gt;&lt;/p&gt; <br> <br>
+            &lt;p class="smalltext"&gt;&lt;/p&gt;
           </p>
           <br>
           <p><b>Eksemple:</b></p>
           <p>
-            &lt;h1&gt;Title&lt;h1&gt;
+            &lt;h2&gt;Title&lt;/h2&gt;
           </p>
         </code>
       </div>
@@ -114,18 +116,33 @@
         <p class="arrow">&#x25BD;</p>
       </div>
       <div class="grid">
-        <div class="a">
-          <a href="" class="knap">menu knap</a>
-          <a id="logud" href="">Log ud</a>
-          <a id="login-knap">Log In</a>
-          <div id="knap-container">
-            <a class="prompt-knap">Ja</a>
-            <a class="prompt-knap">Nej</a>
+        <div class="a buttons-container">
+          <div class="smallholder">
+            <p>navigations knap:</p>
+            <a href="" class="knap">menu knap</a>
+          </div>
+          <div class="smallholder">
+            <p>log ud knap:</p>
+            <a id="logud" href="">Log ud</a>
+          </div>
+          <div class="smallholder">
+            <p>log ind knap:</p>
+            <a id="login-knap">Log In</a>
+          </div>
+          <div class="smallholder">
+            <p>kontekst knap:</p>
             <a class="prompt-knap">Ok</a>
           </div>
         </div>
         <code class="box b">
-          <p>&lt <br>
+          <p><b>HTML Kode:</b></p>
+          <p> &lt;a href="" class="knap"&gt;&lt;/a&gt; <br> <br>
+            &lt;a href="" id="logud"&gt;&lt;/a&gt; <br> <br>
+            &lt;a class="login-knap"&gt;&lt;/a&gt; <br> <br>
+            &lt;div class="prompt-knap"&gt;&lt;/div&gt; <br> <br>
+          </p>
+          <p><b>Eksemple:</b></p>
+          <p>&lt;a href="login/ login.html" class="logud"&gt; Log ud &lt;/a&gt;</p>
         </code>
       </div>
     </div>
@@ -140,7 +157,6 @@
 
         </div>
         <code class="box b">
-          <p>&lt
         </code>
       </div>
     </div>
