@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="testoverblik.js" defer></script>
     <script src="ttjeneste.js" defer></script>
+    <script src="ftjeneste.js" defer></script>
     <title>Abscribe Overblik</title>
 </head>
 <body>
@@ -44,53 +45,73 @@
     
     <datalist id="tags">
     </datalist>
-
+    <!-- amanda -->
     <div id="ttprofil" class="ttprofil">
         <!--tilfoej tjeneste profil indhold-->
         <div class="ttprofil-content">
           <!--billede kasse-->
-                <div class="imgb"></div>
-                <!--navn-->
-                <div class="navnb">
-                  <h3>Navn</h3>
-                  <input id="inname" type="text">
+            <div class="imgb"></div>
+            <!--navn-->
+            <div class="navnb">
+                <h3>Navn</h3>
+                <input id="inname" type="text">
+            </div>
+                <!-- X til at lukk-->
+            <button class="luk" id="luk">X</button>
+            <!--boks til pris og tjeneste startet-->
+            <div class="tekstb">
+                <p class="pris">Pris <input id="inprice" type="number"> </p>
+                <p class="tstart">Startede</p>
+            </div>
+            <!--boks til projekt og tilføjet af-->
+            <div class="tekstb2">
+                <p class="projekt">Projekt</p>
+                <p class="taf">Tilføjet af</p>
+            </div>
+            <!--Tags title-->
+            <div class="tekstb3">
+                <p>Tags</p> <input id="intag" type="text">
+            </div>
+            <!--tag box med + knap-->
+            <div class="ttag">+ </div>
+            <!--boks med note og konti title-->
+            <div class="tekstb4">
+                <div class="noter">
+                    <p>Noter</p>
+                    <div class="whiteb">
+                        <p>I..</p></div>
                 </div>
-                  <!-- X til at lukk-->
-                <button class="luk" id="luk">X</button>
-                <!--boks til pris og tjeneste startet-->
-                <div class="tekstb">
-                    <p class="pris">Pris <input id="inprice" type="number"> </p>
-                    <p class="tstart">Startede</p>
+                <div class="kontin">
+                    <p>Konti</p>
+                    <div class="whiteb">
+                        <button id="tkonto">+</button></div>
                 </div>
-                <!--boks til projekt og tilføjet af-->
-                <div class="tekstb2">
-                    <p class="projekt">Projekt</p>
-                    <p class="taf">Tilføjet af</p>
-                </div>
-                <!--Tags title-->
-                <div class="tekstb3">
-                    <p>Tags</p> <input id="intag" type="text">
-                </div>
-                <!--tag box med + knap-->
-                <div class="ttag">+ </div>
-                <!--boks med note og konti title-->
-                <div class="tekstb4">
-                    <div class="noter">
-                        <p>Noter</p>
-                        <div class="whiteb">
-                          <p>I..</p></div>
-                    </div>
-                    <div class="kontin">
-                        <p>Konti</p>
-                        <div class="whiteb">
-                          <button id="tkonto">+</button></div>
-                    </div>
-                    <span id="klips" class="material-symbols-outlined">attach_file</span>
-                    <button id="ttjeneste" class="ttjeneste">Tilføj tjeneste</button>
-                </div>
+                <span id="klips" class="material-symbols-outlined">attach_file</span>
+                <button id="ttjeneste" class="ttjeneste">Tilføj tjeneste</button>
+            </div>
         </div>
     </div>
 
+    <div id="fjernbox">
+        <div id="fjernm" class="fjernm">
+            <div class="fjern-content">
+            <p>Er du sikker på at du vil fjerne tjenesten?</p>
+            <div class="janej">
+                <button id="ja" >Ja</button>
+                <button id="nej" >Nej</button>
+            </div>
+            </div>
+        </div>
+
+        <div id="fjern2" class="fjern2">
+            <div class="fjern2-content">
+            <p>Tjenesten er nu fjernet</p>
+            <button id="ok2">Ok</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- lynge -->
     <div id="allbox">
         <div class="holderbox">
             <div onclick="expand(this)" class="box Prøve Intern Kode">
@@ -141,6 +162,7 @@
                         attach_file
                     </span>
                     <p onclick="expand(this)" class="botar arrow">&#x25B2;</p>
+                    <button id="fjern">Fjern</button>
                 </div>
             </div>
         </div>
@@ -194,6 +216,7 @@
                         attach_file
                     </span>
                     <p onclick="expand(this)" class="botar arrow">&#x25B2;</p>
+                    <button id="fjern">Fjern</button>
                 </div>
             </div>
         </div>
@@ -250,6 +273,7 @@
                     attach_file
                 </span>
                 <p onclick="expand(this)" class="botar arrow">&#x25B2;</p>
+                <button id="fjern">Fjern</button>
             </div>
         </div>
     </div>
