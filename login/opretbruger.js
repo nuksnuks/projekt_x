@@ -35,7 +35,7 @@ function validateLogin(){
     window.location = "../index.html";
   }
   else{
-    alert("forkert brugernavn eller password")
+    alert("forkert brugernavn eller adgangskode")
   }
 }
 

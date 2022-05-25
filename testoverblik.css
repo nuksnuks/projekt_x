@@ -44,7 +44,7 @@ body{
   margin-bottom: 10px;
   display: none;
   grid-template-columns: 20px 55px 1fr 1fr 20px;
-  grid-template-areas: 
+  grid-template-areas:
     "im im nm nm ed"
     "im im tx dt ."
     ". tt tt tt ."
@@ -134,7 +134,7 @@ h3{
 .exbottom{
   grid-area: eb;
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "nt nt kt kt"
     "if bt bt .";
   column-gap: 40px;
@@ -149,7 +149,7 @@ h3{
 .notes{
   margin-top: 5px;
   grid-area: nt;
-  
+
 }
 
 .konto{
@@ -225,11 +225,20 @@ nav{
 }
 
 #login-knap {
-  padding: .9px 0px 0px 4px;
-  background-color: white;
-  border: 1px solid grey;
-  border-radius: 2px;
+  text-align: center;
+  padding: .9px 5px 0px 4px;
+  background-color: var(--peach);
+  border: none;
+  border-radius: 5px;
   margin-top: 10px;
+}
+
+#user-login, #user-code{
+  border: none;
+  border-radius: 5px;
+  padding-left: 5px;
+  height: 20px;
+
 }
 
 #login-container {

@@ -74,7 +74,7 @@ hr{
 }
 #darkpurple{
   background-color: var(--deeppurple);
-  
+
 }
 #purple{
   background-color: var(--purple);
@@ -107,7 +107,7 @@ hr{
 
 .grid{
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "a b";
 }
 
@@ -124,4 +124,33 @@ hr{
   color: var(--deeppurple);
 }
 
-
+.knap {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--deeppurple);
+  background-color: var(--green);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
+#logud{
+  background-color: var(--lightpurple);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+}
+#login-knap {
+    text-align: center;
+    padding: 0.9px 5px 0px 4px;
+    color: var(--deeppurple);
+    background-color: var(--peach);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.prompt-knap{
+  background-color: var(--deeppurple);
+  color: var(--peach);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
