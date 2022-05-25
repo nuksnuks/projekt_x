@@ -114,7 +114,7 @@ function addbox(){
     localStorage.setItem("tlongt", longt);
 
     hid.getElementsByClassName("name")[0].innerHTML = name;
-    hid.getElementsByClassName("price")[0].innerHTML = price;
+    hid.getElementsByClassName("price")[0].innerHTML = price + " kr.";
     hid.getElementsByClassName("box")[0].classList = "box";
     hid.getElementsByClassName("box")[0].classList.add(tag);
     let toadd = hid.innerHTML;
@@ -141,7 +141,7 @@ function loadbox(n, p, t){
     let all = document.getElementById("allbox");
     let hid = document.getElementById("hidden");
     hid.getElementsByClassName("name")[0].innerHTML = n;
-    hid.getElementsByClassName("price")[0].innerHTML = p;
+    hid.getElementsByClassName("price")[0].innerHTML = p + " kr.";
     hid.getElementsByClassName("box")[0].classList = "box";
     hid.getElementsByClassName("box")[0].classList.add(t);
     let toadd = hid.innerHTML;
