@@ -21,6 +21,7 @@ body{
 .guideT{
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 
 .arrow{
@@ -31,7 +32,6 @@ body{
   background-color: var(--purple);
   border-radius: 21px;
   padding: 10px;
-  cursor: pointer;
   margin-bottom: 10px;
 }
 
@@ -133,6 +133,11 @@ hr{
   flex-wrap: wrap;
 }
 
+.icon-container{
+  display: flex;
+  flex-direction: column;
+}
+
 .smallholder{
   margin-bottom: 14px;
   margin-right: 20px;
@@ -191,4 +196,18 @@ hr{
 
 .smallimg{
   height: 60px;
+  align-self: start;
+}
+
+span{
+  margin-bottom: 5px;
+}
+
+#filter{
+  border-color: var(--green);
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  width: 100px;
+  height: 34px;
 }
