@@ -11,6 +11,10 @@ var data = google.visualization.arrayToDataTable([
   ['browser Stack',14.5]
 ]);
 
+var options = {
+  'max-width': '100%'
+}
+
 var chart = new google.visualization.BarChart(document.getElementById('myChart'));
   chart.draw(data);
 }
