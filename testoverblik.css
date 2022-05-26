@@ -333,19 +333,24 @@ nav{
   padding: 10px;
 }
 
-@media screen and (max-width: 750px) {
-  #main-container{
-    display: grid;
-    grid-template-areas:
-      'item1'
-      'item3'
-      'item2'
-      'item4';
-  }
+#godkend-item{
+  max-width: 100%;
+  min-width: 100%;
 }
 
+#main-item4{
+  max-width: 50%;
+  min-width: 50%;
+}
 #myChart{
-  width: 100%;
+ max-width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  #main-container{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 #main-item1{
@@ -367,6 +372,7 @@ nav{
   background-color: var(--white);
   grid-area: item4;
   border-radius: 10px;
+  max-width: 100%;
 }
 .godkend-item{
   background-color: var(--lightpurple);
@@ -431,7 +437,7 @@ nav{
     align-items: center;
     justify-content: center;
   }
-  
+
   .ttprofil-content{
     background-color: var(--green);
     border-radius: 21px;
@@ -453,7 +459,7 @@ nav{
     background-color: var(--green);
     border-radius: 5px;
   }
-  
+
   .imgb{
     grid-area: pic;
     background-color: var(--offwhite);
@@ -461,17 +467,17 @@ nav{
     height: 50px;
     width: 120%;
   }
-  
+
   .navnb{
     display: flex;
   }
-  
+
   .navnb input{
     margin-left: 10px;
     margin-top: 10px;
     height: 20px;
   }
-  
+
   .navnb h3{
     grid-area: nv;
     font-weight: 700;
@@ -479,7 +485,7 @@ nav{
     margin-top: 5px;
     margin-left: 30px;
   }
-  
+
   #luk{
     grid-area: luk;
     color: var(--deeppurple);
@@ -493,11 +499,11 @@ nav{
     margin-top: -15px;
     cursor: pointer;
   }
-  
+
   .ttprofil-content .imgb{
     height: 100px;
   }
-  
+
   .tekstb{
     grid-area: tx1;
     width: 100%;
@@ -507,7 +513,7 @@ nav{
     justify-content: space-around;
     margin-left: 20px;
   }
-  
+
   .tekstb2{
     grid-area: tx2;
     width: 100%;
@@ -515,7 +521,7 @@ nav{
     flex-direction: column;
     justify-content: space-around;
   }
-  
+
   .ttag{
     grid-area: ta;
     display: flex;
@@ -531,19 +537,19 @@ nav{
     font-size: 20px;
     justify-content: center;
   }
-  
+
   .tekstb3{
     margin-top: 5px;
     grid-area: tx3;
     display: flex;
   }
-  
+
   .tekstb3 input{
     margin-left: 10px;
     margin-top: 4px;
     height: 20px;
   }
-  
+
   .tekstb4{
     grid-area: tx4;
     display: grid;
@@ -552,26 +558,26 @@ nav{
       "tx4 tj tj .";
     column-gap: 40px;
   }
-  
+
   .whiteb{
     background-color: var(--offwhite);
     border-radius: 21px;
     padding: 20px;
     padding-bottom: 50px;
-  
+
   }
-  
+
   .noter{
     margin-top: 5px;
     grid-area: no;
-  
+
   }
   .kontin{
     margin-top: 5px;
     grid-area: kn;
     color: var(--deeppurple);
   }
-  
+
   #tkonto {
     background-color: var(--offwhite);
     border:0;
@@ -583,19 +589,19 @@ nav{
     margin-left: 90%;
     margin-top: -20px;;
   }
-  
+
   .tekstb4 span{
     grid-area: tx4;
     color: var(--deeppurple);
     margin-left: -10px;
   }
-  
+
   .ttjeneste{
     grid-area: tj;
     text-align: center;
     cursor: pointer;
   }
-  
+
   #ttjeneste {
     background-color: var(--deeppurple);
     border: 0;
@@ -607,7 +613,7 @@ nav{
     padding: 10px 20px;
     margin-top: 20px;
   }
-  
+
   #klips {
     color: var(--deeppurple);
     margin-top: 20px;
@@ -633,7 +639,7 @@ nav{
     position: fixed; /* Stay in place */
     transition: opacity 0.3s ease;
   }
-  
+
   .fjern-content {
     background-color: #F2D7CA;
     padding: 20px;
@@ -643,7 +649,7 @@ nav{
     border-style: solid;
     border-color: var(--purple);
     }
-  
+
   .fjernm p {
     margin: 30px;
     font-family: 'titillium-web', sans-serif;
@@ -656,7 +662,7 @@ nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  
+
   }
   #ja, #nej{
     background-color: var(--deeppurple);
@@ -671,7 +677,7 @@ nav{
     margin: auto;
     cursor: pointer;
   }
-  
+
   .fjern2 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -684,7 +690,7 @@ nav{
     border-radius: 21px;
     margin-top: 5px;
   }
-  
+
   .fjern2 p {
     display: flex;
     margin: 30px;
@@ -696,7 +702,7 @@ nav{
     color: var(--deeppurple);
     margin-top: 10px;
   }
-  
+
   #ok2 {
     display: flex;
     justify-content: center;
@@ -714,11 +720,10 @@ nav{
     align-items: center;
     cursor: pointer;
   }
-  
+
   #fjernbox{
     display: flex;
     justify-content: center;
     width: 100%;
     text-align: center;
   }
-
