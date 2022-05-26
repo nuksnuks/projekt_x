@@ -19,6 +19,23 @@
     <!-- lynge -->
     <div class="box" onclick="showhide(this)">
       <Div class="guideT">
+        <p>Logo</p>
+        <p class="arrow">&#x25BD;</p>
+      </Div>
+      <div class="grid">
+        <div class="a">
+          <img class="smallimg" src="../assets/abscribe-logo.svg" alt="Abscribe logo">
+        </div>
+        <code class="box b">
+          <p><b>HTML Kode:</b></p>
+          <p>&lt;img id="logo" src="assets/abscribe-logo.svg" alt="abscribe logo"&gt;</p>
+          
+        </code>
+      </div>
+    </div>
+
+    <div class="box" onclick="showhide(this)">
+      <Div class="guideT">
         <p>Text</p>
         <p class="arrow">&#x25BD;</p>
       </Div>
@@ -118,20 +135,24 @@
       <div class="grid">
         <div class="a buttons-container">
           <div class="smallholder">
-            <p>navigations knap:</p>
+            <p>Navigations knap:</p>
             <a href="" class="knap">menu knap</a>
           </div>
           <div class="smallholder">
-            <p>log ud knap:</p>
+            <p>Log ud knap:</p>
             <a id="logud" href="">Log ud</a>
           </div>
           <div class="smallholder">
-            <p>log ind knap:</p>
+            <p>Log ind knap:</p>
             <a id="login-knap">Log In</a>
           </div>
           <div class="smallholder">
-            <p>kontekst knap:</p>
+            <p>Kontekst knap:</p>
             <a class="prompt-knap">Ok</a>
+          </div>
+          <div class="smallholder">
+            <p>Fjern knap:</p>
+            <a class="fjern">Fjern</a>
           </div>
         </div>
         <code class="box b">
@@ -140,6 +161,7 @@
             &lt;a href="" id="logud"&gt;&lt;/a&gt; <br> <br>
             &lt;a class="login-knap"&gt;&lt;/a&gt; <br> <br>
             &lt;div class="prompt-knap"&gt;&lt;/div&gt; <br> <br>
+            &lt;button id="fjern"&gt;&lt;/button&gt; <br> <br>
           </p>
           <p><b>Eksemple:</b></p>
           <p>&lt;a href="login/ login.html" class="logud"&gt; Log ud &lt;/a&gt;</p>

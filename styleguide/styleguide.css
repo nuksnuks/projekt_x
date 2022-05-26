@@ -129,11 +129,13 @@ hr{
 
 .buttons-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .smallholder{
   margin-bottom: 14px;
+  margin-right: 20px;
 }
 
 .smallholder p{
@@ -170,4 +172,23 @@ hr{
   padding: 5px 30px 5px 30px;
   border-radius: 10px;
   font-size: 30px;
+}
+
+.fjern {
+  background-color: #36244D;
+  border: 21px;
+  border-radius: 21px;
+  color: #E65151;
+  font-family: 'titillium-web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 13px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.smallimg{
+  height: 60px;
 }
