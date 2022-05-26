@@ -105,7 +105,7 @@ function addbox(){
     }
     else{
         var longn = name;
-        var longp = price;
+        var longp = localStorage.getItem("tlongp") + "," + price;
         var longt = tag;
     }
 

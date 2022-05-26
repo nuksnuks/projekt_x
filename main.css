@@ -722,3 +722,9 @@ nav{
     text-align: center;
   }
 
+  .ii{
+    height: 100%;
+    width: 100%;
+    border-radius: 21px;
+  }
+
