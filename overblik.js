@@ -132,7 +132,6 @@ if(localStorage.getItem("tlongn") !== null && localStorage.getItem("tlongt") !==
     names = localStorage.getItem("tlongn").split(",");
     prices = localStorage.getItem("tlongp").split(",");
     tags = localStorage.getItem("tlongt").split(",");
-    console.log(tags)
     for(let i = 2; i < names.length; i++){
         j = i-1
         loadbox(names[i], prices[i], tags[j]);
