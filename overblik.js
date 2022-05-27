@@ -128,12 +128,15 @@ function addbox(){
     updatetags();
 }
 
-if(localStorage.getItem("tlongn") !== null){
+if(localStorage.getItem("tlongn") !== null && localStorage.getItem("tlongt") !== null){
     names = localStorage.getItem("tlongn").split(",");
     prices = localStorage.getItem("tlongp").split(",");
     tags = localStorage.getItem("tlongt").split(",");
-    for(let i = 0; i < names.length; i++){
-        loadbox(names[i], prices[i], tags[i]);
+    console.log(tags)
+    for(let i = 2; i < names.length; i++){
+        j = i-1
+        loadbox(names[i], prices[i], tags[j]);
+        
     }
 }
 

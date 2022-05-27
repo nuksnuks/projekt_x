@@ -2,15 +2,22 @@ google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
+  names = localStorage.getItem("tlongn")
+  if(names !== null) {
+    names = names.split(",");
+  }
+  else{
+    localStorage.setItem("tlongn", "Heroku,Slack");
+    names = localStorage.getItem("tlongn").split(",")
+  }
+  
   numbers = localStorage.getItem("tlongp");
-
   if(numbers !== null) {
       numbers = numbers.split(",");
 
       sum(numbers)
   }
   else{
-      localStorage.setItem("tlongp", "1768,700")
       let numbers = localStorage.getItem("tlongp").split(",");
 
       sum(numbers)
@@ -20,22 +27,25 @@ function drawChart() {
       let sum = 0;
       for (let i = 0; i < x.length ; i++) {
       sum += parseInt(x[i]);
-      }
+      }   
 
   var data = google.visualization.arrayToDataTable([
       ['Tjeneste', 'forbrug i kr.'],
       ['Total', sum, ],
-      ['Slack',48.6],
-      ['Asana',44.4],
-      ['Code Climate',23.9],
-      ['browser Stack',14.5]
+      [names[0],x[0]],
+      [names[1],x[1]],
+      [names[2],x[2]],
+      [names[3],x[3]]
   ]);
-
-    var options = {
-    'max-width': '100%'
-  }
 
     var chart = new google.visualization.ColumnChart(document.getElementById('myChart'));
     chart.draw(data);
   };
 }
+
+window.addEventListener('resize', function(){
+  drawChart();
+}
+);
+
+
