@@ -2,26 +2,40 @@ google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
-var data = google.visualization.arrayToDataTable([
-  ['Tjeneste', 'forbrug i kr.'],
-  ['Google Workspace',54.8],
-  ['Slack',48.6],
-  ['Asana',44.4],
-  ['Code Climate',23.9],
-  ['browser Stack',14.5]
-]);
+  numbers = localStorage.getItem("tlongp");
 
-var options = {
-  'max-width': '100%'
-}
+  if(numbers !== null) {
+      numbers = numbers.split(",");
 
-var chart = new google.visualization.BarChart(document.getElementById('myChart'));
-  chart.draw(data);
-}
+      sum(numbers)
+  }
+  else{
+      localStorage.setItem("tlongp", "1768,700")
+      let numbers = localStorage.getItem("tlongp").split(",");
 
-window.addEventListener('resize', fixit, false);
+      sum(numbers)
+  }
 
-function fixit(){
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
+  function sum(x){
+      let sum = 0;
+      for (let i = 0; i < x.length ; i++) {
+      sum += parseInt(x[i]);
+      }
+
+  var data = google.visualization.arrayToDataTable([
+      ['Tjeneste', 'forbrug i kr.'],
+      ['Total', sum, ],
+      ['Slack',48.6],
+      ['Asana',44.4],
+      ['Code Climate',23.9],
+      ['browser Stack',14.5]
+  ]);
+
+    var options = {
+    'max-width': '100%'
+  }
+
+    var chart = new google.visualization.ColumnChart(document.getElementById('myChart'));
+    chart.draw(data);
+  };
 }
