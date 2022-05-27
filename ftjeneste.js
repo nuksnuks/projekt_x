@@ -1,7 +1,7 @@
 //Amanda//
 //modalerne der åbner popups//
 let fjernm = document.getElementById("fjernm");
-let fjern = document.getElementById("fjern");
+let fjern = document.getElementsByClassName("fjern")[0];
 
 //modalerne der lukker popups//
 let nej = document.getElementById("nej");

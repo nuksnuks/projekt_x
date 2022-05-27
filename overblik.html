@@ -19,9 +19,9 @@
   <header>
     <img id="logo" src="assets/abscribe-logo.svg" alt="abscribe logo">
     <div id="header-container">
-    <img id="userimg" src="assets/profil-img.jpg" name="user-image" alt="user-image">
+    <img id="userimg" src="assets/profil-img.jpg" alt="user-image">
     <a id="logud" href="login/login.html">Log ud</a>
-    <script src="login/logud.js" charset="utf-8"></script>
+    <script src="login/logud.js"></script>
     </div>
   </header>
   <nav>
@@ -95,11 +95,11 @@
     <div id="fjernbox">
         <div id="fjernm" class="fjernm">
             <div class="fjern-content">
-            <p>Er du sikker på at du vil fjerne tjenesten?</p>
-            <div class="janej">
-                <button id="ja" >Ja</button>
-                <button id="nej" >Nej</button>
-            </div>
+                <p>Er du sikker på at du vil fjerne tjenesten?</p>
+                <div class="janej">
+                    <button id="ja" >Ja</button>
+                    <button id="nej" >Nej</button>
+                </div>
             </div>
         </div>
 
@@ -162,7 +162,7 @@
                         attach_file
                     </span>
                     <p onclick="expand(this)" class="botar arrow">&#x25B2;</p>
-                    <button id="fjern">Fjern</button>
+                    <button class="fjern">Fjern</button>
                 </div>
             </div>
         </div>
@@ -216,66 +216,68 @@
                         attach_file
                     </span>
                     <p onclick="expand(this)" class="botar arrow">&#x25B2;</p>
-                    <button id="fjern">Fjern</button>
+                    <button class="fjern">Fjern</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hidden">
+        <div class="holderbox">
+            <div onclick="expand(this)" class="box">
+                <div class="imgbox"></div>
+                <div class="textbox">
+                    <p class="name">Navn</p>
+                    <p class="price smalltext">Pris</p>
+                </div>
+                <div class="tagbox">
+                </div>
+                <div class="ditbox">
+                    <p class="edit">Redigeret</p>
+                    <p class="use smalltext">Projekt</p>
+                </div>
+            </div>
+            <div class="expandbox">
+                <div class="imgbox"></div>
+                <div class="namebox">
+                    <h3>Navn</h3>
+                </div>
+                <span class="material-symbols-outlined">
+                    edit
+                </span>
+                <div class="textbox">
+                    <p class="price">Pris</p>
+                    <p class="start">Startede</p>
+                </div>
+                <div class="ditbox">
+                    <p class="edit">Redigeret</p>
+                    <p class="use">Projekt</p>
+                </div>
+                <div class="tagtitle">
+                    <p>Tags</p>
+                </div>
+                <div class="tagbox">
+                </div>
+                <div class="exbottom">
+                    <div class="notes">
+                        <p>Noter</p>
+                        <div class="whitebox"></div>
+                    </div>
+                    <div class="konto">
+                        <p>Konti</p>
+                        <div class="whitebox"></div>
+                        <p class="arrow">&#x25BC;</p>
+                    </div>
+                    <span class="material-symbols-outlined">
+                        attach_file
+                    </span>
+                    <p onclick="expand(this)" class="botar arrow">&#x25B2;</p>
+                    <button class="fjern">Fjern</button>
                 </div>
             </div>
         </div>
     </div>
 </body>
 
-<div id="hidden">
-    <div class="holderbox">
-        <div onclick="expand(this)" class="box">
-            <div class="imgbox"></div>
-            <div class="textbox">
-                <p class="name">Navn</p>
-                <p class="price smalltext">Pris</p>
-            </div>
-            <div class="tagbox">
-            </div>
-            <div class="ditbox">
-                <p class="edit">Redigeret</p>
-                <p class="use smalltext">Projekt</p>
-            </div>
-        </div>
-        <div class="expandbox">
-            <div class="imgbox"></div>
-            <div class="namebox">
-                <h3>Navn</h3>
-            </div>
-            <span class="material-symbols-outlined">
-                edit
-            </span>
-            <div class="textbox">
-                <p class="price">Pris</p>
-                <p class="start">Startede</p>
-            </div>
-            <div class="ditbox">
-                <p class="edit">Redigeret</p>
-                <p class="use">Projekt</p>
-            </div>
-            <div class="tagtitle">
-                <p>Tags</p>
-            </div>
-            <div class="tagbox">
-            </div>
-            <div class="exbottom">
-                <div class="notes">
-                    <p>Noter</p>
-                    <div class="whitebox"></div>
-                </div>
-                <div class="konto">
-                    <p>Konti</p>
-                    <div class="whitebox"></div>
-                    <p class="arrow">&#x25BC;</p>
-                </div>
-                <span class="material-symbols-outlined">
-                    attach_file
-                </span>
-                <p onclick="expand(this)" class="botar arrow">&#x25B2;</p>
-                <button id="fjern">Fjern</button>
-            </div>
-        </div>
-    </div>
-</div>
+
 </html>

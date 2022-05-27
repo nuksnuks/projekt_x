@@ -620,7 +620,7 @@ nav{
     margin-left: -5px;
   }
 
-  #fjern {
+  .fjern {
     grid-area: ft;
     background-color: #36244D;
     border: 21px;
