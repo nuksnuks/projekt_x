@@ -5,6 +5,9 @@ let allnumbers = localStorage.getItem("tlongp");
 if(allnumbers !== null){
     allnumbers = allnumbers.split(",");
 
+    //allnumbers = "1768,700,200"
+    //allnumbers = ["1768", "700", "200"]
+
     sum(allnumbers)
 }else{
     localStorage.setItem("tlongp", "1768,700")
@@ -13,10 +16,10 @@ if(allnumbers !== null){
     sum(allnumbers)
 }
 
-function sum(nums){
+function sum(allnumbers){
     let sum = 0;
-    for (let i =0;i<nums.length;i++) {
-    sum += parseInt(nums[i]);
+    for (let i =0 ;i<allnumbers.length; i++) {
+    sum += parseInt(allnumbers[i]);
     }
 
     text.innerHTML = sum + " kr.";
