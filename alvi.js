@@ -5,8 +5,8 @@ let allnumbers = localStorage.getItem("tlongp");
 if(allnumbers !== null){
     allnumbers = allnumbers.split(",");
 
-    //allnumbers = "1768,700,200"
-    //allnumbers = ["1768", "700", "200"]
+    //allnumbers = "1768,700"
+    //allnumbers = ["1768", "700"]
 
     sum(allnumbers)
 }else{
