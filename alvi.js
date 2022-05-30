@@ -1,20 +1,23 @@
 
 
 let text = document.getElementById("pricehere");
-let allnumbers = localStorage.getItem("tlongp");
-if(allnumbers !== null){
-    allnumbers = allnumbers.split(",");
+ 
+window.addEventListener("load", function() {
+    let allnumbers = localStorage.getItem("tlongp");
+    if(allnumbers !== null){
+        allnumbers = allnumbers.split(",");
 
-    //allnumbers = "1768,700"
-    //allnumbers = ["1768", "700"]
+        //allnumbers = "1768,700"
+        //allnumbers = ["1768", "700"]
 
-    sum(allnumbers)
-}else{
-    localStorage.setItem("tlongp", "1768,700")
-    let allnumbers = localStorage.getItem("tlongp").split(",");
+        sum(allnumbers)
+    }else{
+        localStorage.setItem("tlongp", "1768,700")
+        let allnumbers = localStorage.getItem("tlongp").split(",");
 
-    sum(allnumbers)
-}
+        sum(allnumbers)
+    }
+});
 
 function sum(allnumbers){
     let sum = 0;
@@ -24,3 +27,5 @@ function sum(allnumbers){
 
     text.innerHTML = sum + " kr.";
 }
+
+
