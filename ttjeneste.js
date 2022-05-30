@@ -18,7 +18,7 @@ ttjeneste.onclick = function() {
   let inputs = ["inname", "inprice", "intag"];
   if(document.getElementById(inputs[0]).value !== "" && document.getElementById(inputs[1]).value !== "" && document.getElementById(inputs[2]).value !== ""){
     ttprofil.style.display = "none";
-    var tjeninfo = [];
+    let tjeninfo = [];
     for(let i = 0; i < inputs.length; i++){
       let added = document.getElementById(inputs[i]).value
       tjeninfo.push(added);
