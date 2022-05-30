@@ -1,3 +1,5 @@
+//af David Wogelius
+
 localStorage.setItem('name', 'admin');
 localStorage.setItem('lastname', 'admin');
 localStorage.setItem('username', 'admin');

@@ -1,3 +1,5 @@
+//Af david Wogelius
+
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
@@ -10,7 +12,7 @@ function drawChart() {
     localStorage.setItem("tlongn", "Heroku,Slack");
     names = localStorage.getItem("tlongn").split(",")
   }
-  
+
   numbers = localStorage.getItem("tlongp");
   if(numbers !== null) {
       numbers = numbers.split(",");
@@ -27,7 +29,7 @@ function drawChart() {
       let sum = 0;
       for (let i = 0; i < x.length ; i++) {
       sum += parseInt(x[i]);
-      }   
+      }
 
   var data = google.visualization.arrayToDataTable([
       ['Tjeneste', 'forbrug i kr.'],
@@ -47,5 +49,3 @@ window.addEventListener('resize', function(){
   drawChart();
 }
 );
-
-

@@ -1,3 +1,5 @@
+//Af David Wogelius
+
 opretknap = document.getElementById("opretknap");
 login = document.getElementById("login-knap");
 
