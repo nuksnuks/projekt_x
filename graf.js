@@ -20,7 +20,7 @@ function drawChart() {
       sum(numbers)
   }
   else{
-      let numbers = localStorage.getItem("tlongp").split(",");
+
 
       sum(numbers)
   }
@@ -45,7 +45,4 @@ function drawChart() {
   };
 }
 
-window.addEventListener('resize', function(){
-  drawChart();
-}
-);
+window.addEventListener('load', drawChart);
